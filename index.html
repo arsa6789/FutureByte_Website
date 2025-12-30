@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./Photos/future.svg" alt="Bootstrap" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+          <!-- One dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+
+            <!-- The dropdown menu container (give it room with min-width) -->
+            <div class="dropdown-menu p-3" aria-labelledby="navbarDropdown" style="min-width:800px;">
+              <div class="row gx-3">
+                <div class="col-6 col-md-2">
+                  <h6 class="dropdown-header">Web development</h6>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/web-development/custom-web-development/">Custom Web</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/web-development/pwa/">Prog WebApp</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/web-development/wordpress/">Wordpress</a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <h6 class="dropdown-header">Cloud</h6>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/cloud/aws/">AWS cloud</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/cloud/gcp/">GCP cloud</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/cloud/microsoft-azure/">Azure cloud</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/cloud/serverless/">Architecture</a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <h6 class="dropdown-header">DevOps</h6>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/devops/kubernetes/">Kubernetes</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/devops/docker/">Docker</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/devops/microservices/">Micro Services</a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <h6 class="dropdown-header">eCommerce</h6>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/ecommerce/magento/">Magneto</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/ecommerce/shopify/">Shopify</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/ecommerce/shopify-plus/">Shopify Plus</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/ecommerce/woocommerce/">WooCommerce</a>
+                </div>
+
+                <div class="col-6 col-md-2">
+                  <h6 class="dropdown-header">Mobile AppDev</h6>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/mobile-app-development/hybrid/">Hybrid AppDev</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/mobile-app-development/android/">Android AppDev</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/mobile-app-development/ios/">IOS AppDev</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/mobile-app-development/react-native-app/">React Native AppDev</a>
+                  <a class="dropdown-item" href="https://futurbyte.co/services/mobile-app-development/flutter/">Flutter AppDev</a>
+                </div>
+              </div>
+              <hr>
+              <div class="row gx-4">
+                <div class="col-7 col-md-3">
+                  <h6 class="dropdown-header">Solution</h6>
+                  <a href="https://futurbyte.co/solutions/cms-development/" class="dropdown-item">CMS</a>
+                  <a href="https://futurbyte.co/solutions/hrms-development/" class="dropdown-item">HRMS</a>
+                  <a href="https://futurbyte.co/solutions/crm-development/" class="dropdown-item">CRM</a>
+                  <a href="https://futurbyte.co/solutions/erp-development/" class="dropdown-item">ERP</a>
+                  <a href="https://futurbyte.co/solutions/lms-development/" class="dropdown-item">LMS</a>
+                  <a href="https://futurbyte.co/solutions/pos-development/" class="dropdown-item">POS</a>
+              </div>
+              <div class="col-7 col-md-3">
+                  <h6 class="dropdown-header">Resource Augmentation</h6>
+                  <a href="https://futurbyte.co/services/resource-augmentation/hire-python-developer/" class="dropdown-item">Hire Python Developer</a>
+                  <a href="https://futurbyte.co/services/resource-augmentation/hire-ios-developer/" class="dropdown-item">Hire iOS Developer</a>
+                  <a href="https://futurbyte.co/services/resource-augmentation/hire-android-developer/" class="dropdown-item">Hire Android Developer</a>
+                  <a href="https://futurbyte.co/services/resource-augmentation/hire-flutter-developer/" class="dropdown-item">Hire Flutter Developer</a>
+                  <a href="https://futurbyte.co/services/resource-augmentation/hire-app-developer/" class="dropdown-item">Hire App Developer</a>
+              </div>
+            </div>
+          </li>
+                
+              
+            
+            <!-- two dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://futurbyte.co/why-us/">Why us</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/about-us/">About us</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/contact-us/">Contact us</a></li>
+              </ul>
+            </li>
+            <!-- three dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Industries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/automotive/">Automotive</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/education/">Education</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/media-entertainment/">Media & Entertainment</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/fintech-industry/">Fintech</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/healthcare/">Healthcare</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/on-demand/">On-Demand</a></li>
+                <li><a class="dropdown-item" href="https://futurbyte.co/industries/real-estate/">Real Estate</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://futurbyte.co/career/">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://futurbyte.co/cost-calculator-for-website-and-mobile-application-development/">Cost Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://futurbyte.co/blog/">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Landing page -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

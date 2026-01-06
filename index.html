@@ -7,14 +7,15 @@
   <title>FutureByte</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="shortcut icon" href="./Photos/image-removebg-preview.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Photos/image-removebg-preview.png" type="image/x-icon">
   <style>
-    body{
+    body {
       background-color: #fff;
       margin: 0;
       padding: 0;
     }
-    nav{
+
+    nav {
       position: sticky;
       top: 0;
       display: flex;
@@ -23,17 +24,21 @@
       padding: 0 20px;
       width: 100vw;
     }
-    .nav a{
+
+    .nav a {
       font-size: 100px;
     }
-    .logo{
+
+    .logo {
       display: flex;
       align-items: center;
     }
-    .logo img{
+
+    .logo img {
       width: 100px;
     }
-    .nav-links{
+
+    .nav-links {
       padding: 15px 10px;
       color: #fff;
       text-decoration: none;
@@ -43,44 +48,53 @@
       display: flex;
       transition: all 0.2s ease-in-out;
     }
-    .hamburger{
+
+    .hamburger {
       display: none;
       cursor: pointer;
       width: 34px;
     }
-    .hamburger .bar{
+
+    .hamburger .bar {
       height: 4px;
       flex-basis: 100%;
       background-color: #fff;
       margin: 5px;
     }
-    @media(max-width: 768px){
-      nav{
+
+    @media(max-width: 768px) {
+      nav {
         flex-wrap: wrap;
       }
-      .hamburger{
+
+      .hamburger {
         display: flex;
         flex-wrap: wrap;
       }
-      .logo{
+
+      .logo {
         height: 50px;
       }
-      .nav-links{
+
+      .nav-links {
         display: none;
         flex-basis: 100%;
         flex-wrap: wrap;
       }
-      .nav-links li{
+
+      .nav-links li {
         flex-basis: 100%;
       }
-      .nav-links a{
+
+      .nav-links a {
         text-align: center;
         font-size: 30px;
       }
+
       /* .nav-links a:hover{
       
       } */
-      .nav-links .nav-cta-button{
+      .nav-links .nav-cta-button {
         padding: 30px 16px;
         margin-left: 0;
         border: none;
@@ -88,47 +102,76 @@
         margin-bottom: 20px;
       }
     }
-    nav a{
+
+    nav a {
       text-decoration: none;
       color: #fff;
     }
-    nav a:hover{
+
+    nav a:hover {
       border-bottom: 1px solid #fff;
       border-top: 0;
       border-left: 0;
       border-right: 0;
     }
-    nav li{
+
+    nav li {
       list-style: none;
       margin: 0 15px;
     }
-    .row{
+
+    .row {
       justify-content: center;
     }
+
     /* Footer responsiveness and layout fixes */
-    .footer { width: 100vw; padding: 0.75rem 0; z-index: auto; max-width: 100vw; }
-    .footer .row { margin-top: 0; }
-    .footer .footer-col { padding-bottom: 0.75rem; }
-    .footer hr { margin: 0; }
+    .footer {
+      width: 100vw;
+      padding: 0.75rem 0;
+      z-index: auto;
+      max-width: 100vw;
+    }
+
+    .footer .row {
+      margin-top: 0;
+    }
+
+    .footer .footer-col {
+      padding-bottom: 0.75rem;
+    }
+
+    .footer hr {
+      margin: 0;
+    }
 
     /* Make navbar logo responsive */
-    .navbar-brand img { max-height: 20px; width: auto; height: auto; }
+    .navbar-brand img {
+      max-height: 20px;
+      width: auto;
+      height: auto;
+    }
 
     /* Ensure navbar stacks above other fixed elements when needed */
-    nav.z-3 { z-index: 1030 !important; position: absolute; }
+    nav.z-3 {
+      z-index: 1030 !important;
+      position: absolute;
+    }
 
     /* Text wrapping utility for long headings */
-    .wrap { word-wrap: break-word; }
+    .wrap {
+      word-wrap: break-word;
+    }
 
     /* Use less for other pages */
-    .image-chatbot{
+    .image-chatbot {
       max-width: 500px;
       min-width: 250px;
       max-height: 100vh;
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
-    .but{
+
+    .but {
       border: 1px solid grey;
       background: transparent;
       width: auto;
@@ -137,26 +180,58 @@
       padding: 5px 15px;
     }
 
-    .ta{
+    .ta {
       text-decoration: none;
       color: black;
     }
 
-    .lo{
+    .sti {
+      z-index: -1;
+    }
+
+    .lo {
       list-style: none;
       margin: 0;
       padding: 0;
     }
+
     /* important for responsive footer */
     @media (max-width: 550px) {
-      .footer { padding: 0.5rem 0; }
-      .footer hr { display: none; }
-      .footer .h4 { font-size: 1rem; }
-      .footer .footer-col { padding-left: 1rem; padding-right: 1rem; }
-      .navbar-brand img { max-height: 15px; }
-      .image-chatbot { max-width: 300px; min-width: 200px; max-height: 100vh; }
+      .footer {
+        padding: 0.5rem 0;
+      }
+
+      .footer hr {
+        display: none;
+      }
+
+      .footer .h4 {
+        font-size: 1rem;
+      }
+
+      .footer .footer-col {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .navbar-brand img {
+        max-height: 15px;
+      }
+
+      .image-chatbot {
+        max-width: 300px;
+        min-width: 200px;
+        max-height: 100vh;
+      }
     }
 
+    .bole {
+      z-index: -1;
+    }
+
+    .tab {
+      z-index: -1;
+    }
   </style>
 </head>
 
@@ -164,7 +239,7 @@
   <!-- navbar -->
   <nav class="bg-dark w-100">
     <div class="logo">
-      <img src="./Photos/future.svg" alt="FutureByte">
+      <a href="index.html"><img src="./Photos/future.svg" alt="FutureByte"></a>
     </div>
     <div class="hamburger">
       <div class="bar"></div>
@@ -188,99 +263,248 @@
     <button type="button" class="but">Application Development</button>
     <br>
     <figure class="figure">
-    <img src="./Photos/How_AI_Chatbots_Are_Enhancing_Florida_Mobile_App_Experiences_f49e45bd89.webp" class="image-chatbot figure-img img-fluid rounded" alt="A generic description of the image for accessibility">
-    <figcaption class="figure-caption">
-      <p><img src="./Photos/calendar-2.dd0c6166.svg" alt="calender">Published in Blog on November 13, 2025</p>
-    </figcaption>
+      <img src="./Photos/How_AI_Chatbots_Are_Enhancing_Florida_Mobile_App_Experiences_f49e45bd89.webp"
+        class="image-chatbot figure-img img-fluid rounded" alt="A generic description of the image for accessibility">
+      <figcaption class="figure-caption">
+        <p><img src="./Photos/calendar-2.dd0c6166.svg" alt="calender">Published in Blog on November 13, 2025</p>
+      </figcaption>
     </figure>
   </div>
   <div class="row w-100">
     <div class="col col-2">
       <p class="h2">Table of Content</p>
-      
+      <div class="sticky-top border p-2 tab" style="top: 80px;">
+        <a href="#" class="text-decoration-none text-black">The Rise of AI Chatbots in Florida's Mobile App Industry</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">Why Chatbots Matter in Mobile App Development in Florida</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">1. 24/7 Availability for Customers</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">2. Personalized User Experience</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">3. Improved Response Time</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">4. Cost-Efficient Customer Service</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">5. Enhanced Data Collection</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">Key Industries in Florida Benefiting from AI Chatbots</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">Integrating AI Chatbots: What Developers Should Consider</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">The Future of Mobile App Development in Florida with AI
+          Chatbots</a>
+        <hr>
+        <a href="#" class="text-decoration-none text-black">Conclusion</a>
+      </div>
     </div>
     <div class="col col-5">
       <h2>Content of the Content</h2>
-      <p>In the ever-evolving world of <a href="https://futurbyte.co/app-development-florida/" style="text-decoration: none;">Mobile App Development in Florida </a>, one innovation is transforming how users engage with brands — AI chatbots. From seamless customer support to personalized shopping recommendations, chatbots powered by artificial intelligence are becoming indispensable for businesses striving to deliver fast, intelligent, and 24/7 service.
-      <br><br>As Florida's tech scene continues to thrive — especially in industries like tourism, healthcare, real estate, and e-commerce — the integration of AI chatbots into mobile apps is helping local businesses create stronger customer connections and streamline operations.</p>
+      <p>In the ever-evolving world of <a href="https://futurbyte.co/app-development-florida/"
+          style="text-decoration: none;">Mobile App Development in Florida </a>, one innovation is transforming how
+        users engage with brands — AI chatbots. From seamless customer support to personalized shopping recommendations,
+        chatbots powered by artificial intelligence are becoming indispensable for businesses striving to deliver fast,
+        intelligent, and 24/7 service.
+        <br><br>As Florida's tech scene continues to thrive — especially in industries like tourism, healthcare, real
+        estate, and e-commerce — the integration of AI chatbots into mobile apps is helping local businesses create
+        stronger customer connections and streamline operations.
+      </p>
       <p class="h3">The Rise of AI Chatbots in Florida's Mobile App Industry</p>
-      <p>Florida is known for its dynamic mix of startups and established enterprises. With customers expecting instant responses and personalized interactions, traditional customer service methods no longer suffice. AI chatbots offer a smart, scalable, and cost-effective solution.</p>
-      <p>By leveraging <b>AI-driven mobile apps</b>, Florida businesses can automate conversations, answer FAQs, process orders, and even upsell products — all without human intervention. The result? Improved efficiency, customer satisfaction, and stronger brand loyalty.</p>
+      <p>Florida is known for its dynamic mix of startups and established enterprises. With customers expecting instant
+        responses and personalized interactions, traditional customer service methods no longer suffice. AI chatbots
+        offer a smart, scalable, and cost-effective solution.</p>
+      <p>By leveraging <b>AI-driven mobile apps</b>, Florida businesses can automate conversations, answer FAQs, process
+        orders, and even upsell products — all without human intervention. The result? Improved efficiency, customer
+        satisfaction, and stronger brand loyalty.</p>
       <p class="h3">Why Chatbots Matter in Mobile App Development in Florida</p>
-      <p>Integrating AI chatbots is not just a trend — it's a strategy that defines modern app success. Here's why developers and businesses are increasingly relying on them:</p>
+      <p>Integrating AI chatbots is not just a trend — it's a strategy that defines modern app success. Here's why
+        developers and businesses are increasingly relying on them:</p>
       <ol type="1">
         <li>
           <p class="h4">24/7 Availability for Customers</p>
-          <p>In a tourist-heavy state like Florida, users often interact with businesses outside of traditional office hours. Chatbots ensure your mobile app is always “on,” offering instant assistance anytime, anywhere.</p>
+          <p>In a tourist-heavy state like Florida, users often interact with businesses outside of traditional office
+            hours. Chatbots ensure your mobile app is always “on,” offering instant assistance anytime, anywhere.</p>
         </li>
         <li>
           <p class="h4">Personalized User Experience</p>
-          <p>AI chatbots learn from user behavior. They can recommend products, provide relevant information, and guide users based on their past interactions — creating a smooth, customized app journey.</p>
+          <p>AI chatbots learn from user behavior. They can recommend products, provide relevant information, and guide
+            users based on their past interactions — creating a smooth, customized app journey.</p>
         </li>
         <li>
           <p class="h4">Improved Response Time</p>
-          <p>With chatbots, users don't wait in long queues or deal with delayed responses. Instant replies improve satisfaction and retention, especially for service-based apps like restaurants, resorts, and retailers.</p>
+          <p>With chatbots, users don't wait in long queues or deal with delayed responses. Instant replies improve
+            satisfaction and retention, especially for service-based apps like restaurants, resorts, and retailers.</p>
         </li>
         <li>
           <p class="h4">Cost-Efficient Customer Service</p>
-          <p>Hiring a full-time support team is expensive. Chatbots reduce operational costs by handling thousands of queries simultaneously, freeing human agents for complex issues.</p>
+          <p>Hiring a full-time support team is expensive. Chatbots reduce operational costs by handling thousands of
+            queries simultaneously, freeing human agents for complex issues.</p>
         </li>
         <li>
           <p class="h4">Enhanced Data Collection</p>
-          <p>Chatbots can track customer preferences, purchase patterns, and behavior within the app. This data helps Florida businesses refine marketing strategies and improve overall app design.</p>
+          <p>Chatbots can track customer preferences, purchase patterns, and behavior within the app. This data helps
+            Florida businesses refine marketing strategies and improve overall app design.</p>
         </li>
       </ol>
       <p class="h3">Key Industries in Florida Benefiting from AI Chatbots</p>
       <p>AI chatbots are impacting nearly every sector, but in Florida, certain industries are leading the way:</p>
       <ul>
         <li>
-          <p><b>Hospitality & Tourism:</b> Hotels, travel apps, and booking platforms use chatbots to assist guests with reservations and recommendations.</p>
+          <p><b>Hospitality & Tourism:</b> Hotels, travel apps, and booking platforms use chatbots to assist guests with
+            reservations and recommendations.</p>
         </li>
         <li>
-          <p><b>Healthcare:</b> Clinics and telehealth apps use AI chatbots for appointment scheduling and basic medical inquiries.</p>
+          <p><b>Healthcare:</b> Clinics and telehealth apps use AI chatbots for appointment scheduling and basic medical
+            inquiries.</p>
         </li>
         <li>
-          <p><b>Real Estate:</b> Property listing apps use chatbots to qualify leads and provide instant property details.</p>
+          <p><b>Real Estate:</b> Property listing apps use chatbots to qualify leads and provide instant property
+            details.</p>
         </li>
         <li>
-          <p><b>E-Commerce:</b> Retailers are leveraging AI chatbots for order tracking, returns, and personalized shopping suggestions.</p>
+          <p><b>E-Commerce:</b> Retailers are leveraging AI chatbots for order tracking, returns, and personalized
+            shopping suggestions.</p>
         </li>
         <li>
-          <p><b>Education:</b> Learning apps use chatbots to provide course recommendations and answer student queries.</p>
+          <p><b>Education:</b> Learning apps use chatbots to provide course recommendations and answer student queries.
+          </p>
         </li>
       </ul>
-      <p>Each of these industries relies on <b>Mobile App Development in Florida</b> to incorporate chatbot features that make user experiences smoother, smarter, and more intuitive.</p>
+      <p>Each of these industries relies on <b>Mobile App Development in Florida</b> to incorporate chatbot features
+        that make user experiences smoother, smarter, and more intuitive.</p>
       <p class="h3">Integrating AI Chatbots: What Developers Should Consider</p>
-      <p>For mobile app developers in Florida, implementing chatbots requires careful planning and the right technology stack. Key considerations include:</p>
+      <p>For mobile app developers in Florida, implementing chatbots requires careful planning and the right technology
+        stack. Key considerations include:</p>
       <ul>
         <li>
-          <p><b>Platform Choice:</b> Tools like Dialogflow, IBM Watson, or Microsoft Bot Framework offer scalable chatbot development options.</p>
+          <p><b>Platform Choice:</b> Tools like Dialogflow, IBM Watson, or Microsoft Bot Framework offer scalable
+            chatbot development options.</p>
         </li>
         <li>
-          <p><b>Natural Language Processing (NLP):</b> Ensuring the chatbot understands and responds naturally to human language.</p>
+          <p><b>Natural Language Processing (NLP):</b> Ensuring the chatbot understands and responds naturally to human
+            language.</p>
         </li>
         <li>
-          <p><b>Security and Privacy:</b> Protecting user data is critical, especially in finance or healthcare apps.</p>
+          <p><b>Security and Privacy:</b> Protecting user data is critical, especially in finance or healthcare apps.
+          </p>
         </li>
         <li>
-          <p><b>User Interface (UI) Design:</b> The chatbot should feel like an integrated part of the app, not an afterthought.</p>
+          <p><b>User Interface (UI) Design:</b> The chatbot should feel like an integrated part of the app, not an
+            afterthought.</p>
         </li>
         <li>
-          <p><b>Continuous Learning:</b> Chatbots should evolve by analyzing new data to improve accuracy and user engagement.</p>
+          <p><b>Continuous Learning:</b> Chatbots should evolve by analyzing new data to improve accuracy and user
+            engagement.</p>
         </li>
       </ul>
       <p class="h3">The Future of Mobile App Development in Florida with AI Chatbots</p>
-      <p>As AI technology continues to advance, chatbots will become even more sophisticated. We're already seeing integrations with voice assistants, AR/VR interfaces, and predictive analytics — transforming how users interact with mobile apps.</p>
-      <p>For Florida businesses, this evolution means more opportunities to enhance user satisfaction, strengthen brand identity, and gain a competitive edge in the digital marketplace.</p>
-      <p>In the near future, <b>Mobile App Development in Florida</b> will rely heavily on intelligent automation, with AI chatbots leading the way toward smarter, more responsive apps.</p>
+      <p>As AI technology continues to advance, chatbots will become even more sophisticated. We're already seeing
+        integrations with voice assistants, AR/VR interfaces, and predictive analytics — transforming how users interact
+        with mobile apps.</p>
+      <p>For Florida businesses, this evolution means more opportunities to enhance user satisfaction, strengthen brand
+        identity, and gain a competitive edge in the digital marketplace.</p>
+      <p>In the near future, <b>Mobile App Development in Florida</b> will rely heavily on intelligent automation, with
+        AI chatbots leading the way toward smarter, more responsive apps.</p>
       <p class="h3">Conclusion</p>
-      <p>AI chatbots are redefining the standards of <b>Mobile App Development in Florida</b>, merging technology and user experience in powerful ways. By offering personalized support, reducing costs, and improving engagement, chatbots are no longer optional — they're essential.</p>
-      <p>For Florida businesses aiming to stay competitive and customer-focused, investing in AI-powered mobile apps isn't just about innovation — it's about building the future of digital interaction.</p>
+      <p>AI chatbots are redefining the standards of <b>Mobile App Development in Florida</b>, merging technology and
+        user experience in powerful ways. By offering personalized support, reducing costs, and improving engagement,
+        chatbots are no longer optional — they're essential.</p>
+      <p>For Florida businesses aiming to stay competitive and customer-focused, investing in AI-powered mobile apps
+        isn't just about innovation — it's about building the future of digital interaction.</p>
     </div>
+
+    <!-- You may also like -->
     <div class="col col-2">
       <h2>You May Also Like</h2>
+
+      <!-- Ad no 1 -->
+      <div class="card mb-3 sti" style="max-width: 540px;">
+        <div class="col-md-8">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none">How to Keep Your Mobile App Updated and Secure</a>
+            <br>
+            <img src="./Photos/calendar-2.dd0c6166.svg" alt="calender.svg">
+            <p class="card-text"><small class="text-muted">Jan 05,2026</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ad no 2 -->
+      <div class="card mb-3 sti" style="max-width: 540px;">
+        <div class="col-md-8">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none">The Importance of UI/UX in Mobile App Success</a>
+            <img src="./Photos/calendar-2.dd0c6166.svg" alt="calender.svg">
+            <p class="card-text"><small class="text-muted">Jan 05,2026</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ad no 3 -->
+      <div class="card mb-3 sti" style="max-width: 540px;">
+        <div class="col-md-8">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none">Why Every Business Needs a Mobile App in 2025</a>
+            <img src="./Photos/calendar-2.dd0c6166.svg" alt="calender.svg">
+            <p class="card-text"><small class="text-muted">Jan 05,2026</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ad no 4 -->
+      <div class="card mb-3 sti" style="max-width: 540px;">
+        <div class="col-md-8">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none">User Experience Testing: Why It’s Essential for App
+              Success</a>
+            <img src="./Photos/calendar-2.dd0c6166.svg" alt="calender.svg">
+            <p class="card-text"><small class="text-muted">Jan 05,2026</small></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Row-2 -->
+  <br>
+  <div class="row w-100">
+    <p class="h2 text-center">Related Blogs</p>
+    <div class="col col-3">
+      <div class="card bole" style="width: 18rem;">
+        <img src="./Photos/mobile_secure.png" class="card-img-top" alt="secure_mobile">
+        <div class="card-body">
+          <h5 class="card-title">How to Keep Your Mobile App Updated and Secure</h5>
+          <p class="card-text">In this blog, we cover everything you need to know about updating and securing your app
+            from hackers and phishing attacks. Read on to learn th.....</p>
+          <a href="#" class="btn btn-primary">Learn more..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="card bole" style="width: 18rem; height: 57vh;">
+        <img src="./Photos/UIUx_importance.jpg" class="card-img-top" alt="UIUx_importance.png">
+        <div class="card-body">
+          <h5 class="card-title">The Importance of UI/UX in Mobile App Success</h5>
+          <p class="card-text">UI/UX designs are the key elements for your mobile app's success. This blog discusses the
+            Importance of the mobile app dev on the early a..</p>
+          <a href="#" class="btn btn-primary">Learn more..</a>
+        </div>
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="card bole" style="width: 18rem; height: 57vh;">
+        <img src="./Photos/buissnes_image.jpg" class="card-img-top" alt="buissnes_image.png">
+        <div class="card-body">
+          <h5 class="card-title">Why Every Buissness Needs a Mobile App in 2025</h5>
+          <p class="card-text">A business, regardless of its size and industry, can choose to invest in a properly
+            designed mobile app. This..</p>
+          <a href="#" class="btn btn-primary">Learn more..</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- footer -->
   <footer class="footer bg-dark text-white w-100">
     <div class="container-fluid">
@@ -292,22 +516,31 @@
             <li><a href="https://futurbyte.co/about-us/" class="text-white text-decoration-none">AboutUS</a></li>
             <li><a href="https://futurbyte.co/blog/" class="text-white text-decoration-none">Blog</a></li>
             <li><a href="https://futurbyte.co/career/" class="text-white text-decoration-none">Careers</a></li>
-            <li><a href="https://futurbyte.co/case-studies/" class="text-white text-decoration-none">Case Studies</a></li>
+            <li><a href="https://futurbyte.co/case-studies/" class="text-white text-decoration-none">Case Studies</a>
+            </li>
             <li><a href="https://futurbyte.co/why-us/" class="text-white text-decoration-none">Company</a></li>
             <li><a href="https://futurbyte.co/why-us/" class="text-white text-decoration-none">WhyUS</a></li>
-            <li><a href="https://futurbyte.co/cost-calculator-for-website-and-mobile-application-development/" class="text-white text-decoration-none">Cost Calculator</a></li>
+            <li><a href="https://futurbyte.co/cost-calculator-for-website-and-mobile-application-development/"
+                class="text-white text-decoration-none">Cost Calculator</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-3">
           <p class="h4">Services</p>
           <ul class="list-unstyled">
-            <li><a href="https://futurbyte.co/services/web-development/" class="text-white text-decoration-none">Website development</a></li>
-            <li><a href="https://futurbyte.co/services/mobile-app-development/" class="text-white text-decoration-none">App development</a></li>
-            <li><a href="https://futurbyte.co/services/ecommerce/" class="text-white text-decoration-none">E-Commerce development</a></li>
-            <li><a href="https://futurbyte.co/solutions/" class="text-white text-decoration-none">Buisness management Solution</a></li>
-            <li><a href="https://futurbyte.co/services/cloud/" class="text-white text-decoration-none">Cloud Solutions</a></li>
-            <li><a href="https://futurbyte.co/services/seo/" class="text-white text-decoration-none">SEO Services</a></li>
-            <li><a href="https://futurbyte.co/services/devops/" class="text-white text-decoration-none">DevOps Services</a></li>
+            <li><a href="https://futurbyte.co/services/web-development/" class="text-white text-decoration-none">Website
+                development</a></li>
+            <li><a href="https://futurbyte.co/services/mobile-app-development/"
+                class="text-white text-decoration-none">App development</a></li>
+            <li><a href="https://futurbyte.co/services/ecommerce/" class="text-white text-decoration-none">E-Commerce
+                development</a></li>
+            <li><a href="https://futurbyte.co/solutions/" class="text-white text-decoration-none">Buisness management
+                Solution</a></li>
+            <li><a href="https://futurbyte.co/services/cloud/" class="text-white text-decoration-none">Cloud
+                Solutions</a></li>
+            <li><a href="https://futurbyte.co/services/seo/" class="text-white text-decoration-none">SEO Services</a>
+            </li>
+            <li><a href="https://futurbyte.co/services/devops/" class="text-white text-decoration-none">DevOps
+                Services</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-6">
@@ -315,19 +548,24 @@
           <form action="#">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control w-50" id="exampleFormControlInput1" placeholder="name@example.com">
+              <input type="email" class="form-control w-50" id="exampleFormControlInput1"
+                placeholder="name@example.com">
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
             </div>
           </form>
-          <a class="btn" href="https://www.facebook.com/FuturByte/" role="button"><img src="./Photos/facebook.png" alt="Facebook"></a>
-          <a class="btn" href="https://www.linkedin.com/company/futurbyte/" role="button"><img src="./Photos/linkedin.svg" alt="LinkedIn"></a>
-          <a class="btn" href="https://www.instagram.com/futurbyte/" role="button"><img src="./Photos/insta.svg" alt="Instagram"></a>
+          <a class="btn" href="https://www.facebook.com/FuturByte/" role="button"><img src="./Photos/facebook.png"
+              alt="Facebook"></a>
+          <a class="btn" href="https://www.linkedin.com/company/futurbyte/" role="button"><img
+              src="./Photos/linkedin.svg" alt="LinkedIn"></a>
+          <a class="btn" href="https://www.instagram.com/futurbyte/" role="button"><img src="./Photos/insta.svg"
+              alt="Instagram"></a>
         </div>
         <div class="col-12 text-center mt-2">
           <hr class="mb-2">
-          <p class="small mb-0">© 2026 - FutureByte Clone Made by <a href="https://youtube.com/@ShadowARSA" class="text-white text-decoration-none">ShadowARSA</a></p>
+          <p class="small mb-0">© 2026 - FutureByte Clone Made by <a href="https://youtube.com/@ShadowARSA"
+              class="text-white text-decoration-none">ShadowARSA</a></p>
         </div>
       </div>
     </div>
@@ -335,22 +573,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-    <script>
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-      let menuOpen = false;
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    let menuOpen = false;
 
-      hamburger.addEventListener('click', () => {
-        if(menuOpen == false){
-          navLinks.style.display = "block";
-          menuOpen = true;
-        }
-        else if (menuOpen == true){
-          navLinks.style.display = "none";
-          menuOpen = false;
-        }
-      });
-    </script>
+    hamburger.addEventListener('click', () => {
+      if (menuOpen == false) {
+        navLinks.style.display = "block";
+        menuOpen = true;
+      }
+      else if (menuOpen == true) {
+        navLinks.style.display = "none";
+        menuOpen = false;
+      }
+    });
+  </script>
 </body>
 
 </html>

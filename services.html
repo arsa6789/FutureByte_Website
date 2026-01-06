@@ -203,6 +203,25 @@
     text-decoration: none;
     color: black;
   }
+
+  /* Make card components responsive */
+  .card {
+    max-width: 18rem;
+    width: 100%;
+  }
+
+  .card .card-img-top {
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Mobile nav: allow toggling open state */
+  .nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
 </style>
 
 <body>
@@ -230,8 +249,8 @@
   <!-- row-1 -->
   <!-- thing-1 -->
   <div class="row w-100 justify-content-evenly">
-    <div class="col col-3 align-content-center">
-      <div class="card" style="width: 18rem;">
+    <div class="col-12 col-md-3 align-content-center">
+      <div class="card" style="max-width: 18rem; width: 100%;">
         <img src="./Photos/small_app_development_090d11719c.webp" class="card-img-top" alt="small_app_dev.webp">
         <div class="card-body">
           <p class="card-text">We offer full-scale application software development services, including design,
@@ -241,8 +260,8 @@
       </div>
     </div>
     <!-- thing-2 -->
-    <div class="col col-3 align-content-center">
-      <div class="card" style="width: 18rem;">
+    <div class="col-12 col-md-3 align-content-center">
+      <div class="card" style="max-width: 18rem; width: 100%;">
         <img src="./Photos/buissnes_image.jpg" class="card-img-top" alt="buissness_management.jpg">
         <div class="card-body">
           <p class="card-text">Our custom software development solutions are designed to boost efficiency, reduce costs,
@@ -252,9 +271,9 @@
       </div>
     </div>
     <!-- thing-3 -->
-    <div class="col col-3">
-      <div class="col col-3 align-content-center">
-        <div class="card" style="width: 18rem;">
+    <div class="col-12 col-md-3">
+      <div class="align-content-center">
+        <div class="card" style="max-width: 18rem; width: 100%;">
           <img src="./Photos/ecommerce_dev.webp" class="card-img-top" alt="ecommerce_dev.webp">
           <div class="card-body">
             <p class="card-text">Let's build and set up an e-commerce store for your business that offers incredible user experience, sales-oriented web design, smooth checkout processes, and more.</p>
